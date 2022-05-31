@@ -14,7 +14,7 @@ const Card = ({ data }) => {
           setSingleCard(data[Math.floor(Math.random() * data.length)])
         }
       >
-        Click
+        Random Card
       </button>
       <div
         className={`card ${flip ? "flip" : ""}`}

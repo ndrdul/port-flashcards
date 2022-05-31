@@ -3,6 +3,7 @@ import FlashcardList from "./FlashcardList";
 import Flashcard from "./Flashcard";
 import "./app.css";
 import SAMPLE_FLASHCARDS from "./portData";
+import portInfoData from "./portInfo";
 import Card from "./components/Card";
 
 const drawCard = () => {
@@ -21,7 +22,7 @@ const App = () => {
         Random Card
       </button>
       <Flashcard flashcard={randomCard} />
-      <Card data={SAMPLE_FLASHCARDS} />
+      <Card data={portInfoData} />
     </div>
   );
 };
