@@ -1,5 +1,5 @@
 body {
-  background-color: #1F0322;
+  background-color: #1f0322;
 }
 
 .card {
@@ -9,7 +9,7 @@ body {
   position: relative;
   border-radius: 0.25rem;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
-  background-color: #F5EBE0;
+  background-color: #f5ebe0;
   transform-style: preserve-3d;
   height: 250px;
   width: 250px;
@@ -18,7 +18,6 @@ body {
 }
 
 .singleCard {
- 
   align-items: center;
 }
 
@@ -47,8 +46,25 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #ffffff;
-  background-color: #5F6062;
+  background-color: #5f6062;
 
   text-align: center;
-  position: relative;
+}
+
+.grid-container {
+  display: grid;
+  /* grid-template-columns: auto auto auto; */
+  grid-template-columns: repeat(1, 1fr);
+  padding: 10px;
+  column-gap: 10px;
+}
+
+.grid-item {
+  /* border: 1px solid #f5ebe0; */
+  padding: 10px;
+  text-align: center;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
