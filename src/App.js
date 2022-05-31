@@ -11,8 +11,8 @@ const App = () => {
 const SAMPLE_FLASHCARDS = [
   {
     id: 1,
-    question: "What is 2+2",
-    answer: 4,
+    question: "SNMP",
+    answer: 'Port 161',
     options: ["2", "3", "4", "5"],
   },
   {
