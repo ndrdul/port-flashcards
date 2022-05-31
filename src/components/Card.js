@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Card = ({ data }) => {
+const Card = ({ data, buttonTitle }) => {
   const [flip, setFlip] = useState(false);
   const [singleCard, setSingleCard] = useState(
     data[Math.floor(Math.random() * data.length)]
@@ -14,7 +14,7 @@ const Card = ({ data }) => {
           setSingleCard(data[Math.floor(Math.random() * data.length)])
         }
       >
-        Random Card
+        {buttonTitle}
       </button>
       <div
         className={`card ${flip ? "flip" : ""}`}
